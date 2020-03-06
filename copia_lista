@@ -1,0 +1,16 @@
+#include<list>
+#include<string>
+#include <iostream>
+using namespace std;
+
+void copia_lista(list<string> & original, list<string> & nova) {
+
+    for (auto & x: original) {
+        nova.push_back(x);
+
+    }
+    for (auto & y: nova) {
+        // "x" contém o dado atual da iteração
+        cout << y << endl;
+    }
+}
